@@ -60,8 +60,8 @@ resource "aws_iam_policy" "lambda" {
         },
         {
           "Action": "iam:PassRole",
-          "Resource": ["arn:aws:iam::739010676765:role/EMR_DefaultRole",
-                       "arn:aws:iam::739010676765:role/EMR_EC2_DefaultRole"],
+          "Resource": ["arn:aws:iam::530623260384:role/EMR_DefaultRole",
+                       "arn:aws:iam::530623260384:role/EMR_EC2_DefaultRole"],
           "Effect": "Allow"
         }
     ]
