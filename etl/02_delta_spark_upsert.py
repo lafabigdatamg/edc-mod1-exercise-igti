@@ -86,7 +86,7 @@ inscricoes = [200001625680,
 
 logger.info("Reduz a 50 casos e faz updates internos no municipio de residencia")
 enemnovo = enemnovo.where(enemnovo.NU_INSCRICAO.isin(inscricoes))
-enemnovo = enemnovo.withColumn("NO_MUNICIPIO_RESIDENCIA", lit("NOVA CIDADE")).withColumn("CO_MUNICIPIO_RESIDENCIA", lit(10000000))
+enemnovo = enemnovo.withColumn("NO_MUNICIPIO_ESC", lit("NOVA CIDADE")).withColumn("CO_MUNICIPIO_ESC", lit(10000000))
 
 
 logger.info("Pega os dados do Enem velhos na tabela Delta...")

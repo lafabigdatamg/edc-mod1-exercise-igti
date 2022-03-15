@@ -31,6 +31,6 @@ print("Writing delta table...")
     .mode("overwrite")
     .format("delta")
     ##vai ter q arrumar pastas, partições por ano...
-    .partitionBy("year")
+    .partitionBy("NU_ANO")
     .save("s3://datalake-eric-igti-edc-tf/staging-zone/enem")
 )
