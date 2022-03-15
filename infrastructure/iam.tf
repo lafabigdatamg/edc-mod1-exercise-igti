@@ -60,8 +60,8 @@ resource "aws_iam_policy" "lambda" {
         },
         {
           "Action": "iam:PassRole",
-          "Resource": ["arn:aws:iam::530623260384:role/EMR_DefaultRole",
-                       "arn:aws:iam::530623260384:role/EMR_EC2_DefaultRole"],
+          "Resource": ["arn:aws:iam::127012818163:role/EMR_DefaultRole",
+                       "arn:aws:iam::127012818163:role/EMR_EC2_DefaultRole"],
           "Effect": "Allow"
         }
     ]
@@ -75,8 +75,9 @@ resource "aws_iam_role_policy_attachment" "lambda_attach" {
   policy_arn = aws_iam_policy.lambda.arn
 }
 
-###############################################################
-#########################  KINESIS  ###########################
+#############
+## KINESIS ##
+#############
 
 resource "aws_iam_policy" "firehose" {
   name        = "IGTIFirehosePolicy"
@@ -118,6 +119,7 @@ resource "aws_iam_policy" "firehose" {
  }
  EOF
 }
+
 
 
 resource "aws_iam_role_policy_attachment" "firehose_attach" {
@@ -251,4 +253,3 @@ resource "aws_iam_role_policy_attachment" "glue_attach" {
   role       = aws_iam_role.glue_role.name
   policy_arn = aws_iam_policy.glue_policy.arn
 }
-
