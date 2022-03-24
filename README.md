@@ -3,11 +3,11 @@
 ### Objetivos
 
 Exercitar os seguintes conceitos trabalhados no Módulo:
-✔ Utilizar os principais serviços de nuvem para Engenharia de Dados
-✔ Ingerir dados de maneira programática em bucket S3
-✔ Implementar um pipeline de processamento de big data
-✔ Disponibilizar dados para consulta usando engine de Data Lake
-✔ Realizar consultas ad hoc para investigar os dados
+- Utilizar os principais serviços de nuvem para Engenharia de Dados
+- Ingerir dados de maneira programática em bucket S3
+- Implementar um pipeline de processamento de big data
+- Disponibilizar dados para consulta usando engine de Data Lake
+- Realizar consultas ad hoc para investigar os dados
 
 ### Enunciado
 
